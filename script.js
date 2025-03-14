@@ -1,3 +1,10 @@
+  // Inicia la música de fondo al cargar la página
+  window.addEventListener('load', () => {
+    backgroundMusic.play().catch(() => {
+      console.log("El usuario necesita interactuar para iniciar el audio.");
+    });
+  });
+
 const preguntas = [
     {
       pregunta: "¿Qué rol preferís en un equipo?",
@@ -90,19 +97,19 @@ const preguntas = [
     switch (personajeGanador) {
       case "Santos":
         descripcion = "Sos La arquitecta mas sorprendente que he conocido!";
-        imagen = "assets/Ely.jpg";
+        imagen = "assets/Ely2.jpg";
         break;
       case "Ravena":
         descripcion = "Sos La arquitecta mas sorprendente que he conocido!";
-        imagen = "assets/Ely.jpg";
+        imagen = "assets/Ely2.jpg";
         break;
       case "Medina":
         descripcion = "Sos La arquitecta mas sorprendente que he conocido!";
-        imagen = "assets/Ely.jpg";
+        imagen = "assets/Ely2.jpg";
         break;
       case "Lamponne":
         descripcion = "Sos La arquitecta mas sorprendente que he conocido!";
-        imagen = "assets/Ely.jpg";
+        imagen = "assets/Ely2.jpg";
         break;
     }
   
@@ -132,10 +139,5 @@ const preguntas = [
   // Inicia el juego
   mostrarPregunta();
   
-  // Inicia la música de fondo al cargar la página
-  window.addEventListener('load', () => {
-    backgroundMusic.play().catch(() => {
-      console.log("El usuario necesita interactuar para iniciar el audio.");
-    });
-  });
+
   
